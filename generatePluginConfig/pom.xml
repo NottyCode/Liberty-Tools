@@ -1,0 +1,45 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>net.wasdev.liberty.tools</groupId>
+    <artifactId>ws-generatepluginconfig</artifactId>
+    <packaging>jar</packaging>
+    <version>0.1-SNAPSHOT</version>
+
+    <name>Liberty profile plugin config generator</name>
+    <description>
+        This executable jar file will get a locally running liberty server to generate a plugin configuration file for a Web server plugin.
+    </description>
+
+    <scm>
+        <connection></connection>
+        <developerConnection></developerConnection>
+        <url></url>
+    </scm>
+
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <configuration>
+          <archive>
+            <manifestEntries>
+              <Main-Class>net.wasdev.liberty.tools.plugincfg.Main</Main-Class>
+            </manifestEntries>
+          </archive>
+          <finalName>${project.artifactId}</finalName>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>

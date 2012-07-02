@@ -1,0 +1,16 @@
+<project name="generatePluginConfig" default="build">
+  <target name="clean">
+    <delete dir="target"/>
+  </target>
+  
+  <target name="build">
+    <mkdir dir="target"/>
+    <mkdir dir="target/classes"/>
+    <javac srcdir="src/main/java" destdir="target/classes" />
+    <jar basedir="target/classes" file="target/ws-generatepluginconfig.jar">
+      <manifest>
+        <attribute name="Main-Class" value="net.wasdev.liberty.tools.plugincfg.Main"/>
+      </manifest>
+    </jar>
+  </target>
+</project>
