@@ -33,7 +33,7 @@
         <configuration>
           <archive>
             <manifestEntries>
-              <Main-Class>net.wasdev.liberty.tools.plugincfg.Main</Main-Class>
+              <Main-Class>com.logicali.wlp.tools.plugincfg.Main</Main-Class>
             </manifestEntries>
           </archive>
           <finalName>${project.artifactId}</finalName>

@@ -9,7 +9,7 @@
     <javac srcdir="src/main/java" destdir="target/classes" />
     <jar basedir="target/classes" file="target/ws-generatepluginconfig.jar">
       <manifest>
-        <attribute name="Main-Class" value="net.wasdev.liberty.tools.plugincfg.Main"/>
+        <attribute name="Main-Class" value="com.logicali.wlp.tools.plugincfg.Main"/>
       </manifest>
     </jar>
   </target>
