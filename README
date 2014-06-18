@@ -2,3 +2,27 @@ Code here is licensed under ASLv2.
 
 http://www.apache.org/licenses/LICENSE-2.0.txt
 
+
+Usage 
+
+To build run "ant clean build" or "mvn assembly:assembly" in generatePluginConfig
+
+Check with your legal department before running "mvn assembly:assembly" as this will pull in Oracle source code.
+
+
+To run
+
+This program requires tools.jar, it will be included in the jar file if you compiled using maven. 
+
+
+If you built with maven run with java -jar ws-generatepluginconfig-0.1-SNAPSHOT-jar-with-dependencies.jar
+
+If you built with ant run with something like java -cp ./ws-generatepluginconfig.jar:<PATH_TO_tools.jar>/tools.jar com.logicali.wlp.tools.plugincfg.Main
+
+
+Optional command line arguments
+
+--outputDir=<OUTPUTDIR> output files to DIRECTORY with the server name as a prefix to prevent duplicates. Without this argument they will be placed in the server's default output directories.
+--serverName=<SERVERNAME> the name of a single server to probe. Without this argument all servers will be probed.
+
+
