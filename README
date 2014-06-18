@@ -22,7 +22,7 @@ If you built with ant run with something like java -cp ./ws-generatepluginconfig
 
 Optional command line arguments
 
---outputDir=<OUTPUTDIR> the name of a single server to probe. Without this argument all servers will be probed.
---serverName=<SERVERNAME> output files to DIRECTORY with the server name as a prefix to prevent duplicates. Without this argument they will be placed in the server's default output directories.
+--outputDir=<OUTPUTDIR> output files to DIRECTORY with the server name as a prefix to prevent duplicates. Without this argument they will be placed in the server's default output directories.
+--serverName=<SERVERNAME> the name of a single server to probe. Without this argument all servers will be probed.
 
 
