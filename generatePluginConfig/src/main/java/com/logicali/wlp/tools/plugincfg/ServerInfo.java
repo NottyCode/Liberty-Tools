@@ -123,8 +123,8 @@ class ServerInfo {
 
     for (VirtualMachineDescriptor vmd : vmds) {
       String displayName = vmd.displayName();
-      if (displayName.contains("ws-launch.jar")) {
-        if (displayName.contains("ws-launch.jar " + sn)) {
+      if (displayName.contains("ws-launch.jar") || displayName.contains("ws-server.jar")) {
+        if (displayName.contains("ws-launch.jar " + sn) || displayName.contains("ws-server.jar " + sn)) {
           try {
             return VirtualMachine.attach(vmd);
           } catch (AttachNotSupportedException e) {
